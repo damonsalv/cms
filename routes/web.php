@@ -41,4 +41,9 @@ Route::get('/admin/report', array('as'=>'admin.home'), function(){
 //Route::get('/post/{id}','PostController@index');
 
 
-Route::Resource('post', 'PostController');
+//Route::Resource('post', 'PostController');
+
+Route::get('/contact', 'PostController@contact');
+
+Route::get('post/{id}/{name}', 'PostController@show_post');
+
